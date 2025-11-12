@@ -4,22 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Cronômetro</title>
 </head>
 
 <body>
     <main>
         <section>
+            <h1>Cronômetro</h1>
             <div class="div-content-inputs">
-                <input id="inputHours" type="number" value="00">:
-                <input id="inputMinutes" type="number" value="00">:
-                <input id="inputSecounds" type="number" value="30">
+                <input id="inputHours" type="text" value="00">:
+                <input id="inputMinutes" type="text" value="00">:
+                <input id="inputSecounds" type="text" value="30">
             </div>
             <div class="classdiv-content-buttons">
-                <button id="btnReset">Resetar</button>
-                <button id="btnEdit">Editar</button>
-                <button id="btnStop">Parar</button>
-                <button id="btnRunCronometro">Iniciar</button>
+                <button id="btnReset">
+                    <img src="./image/restart.png" alt="Resetar">
+                </button>
+                <button id="btnEdit">
+                    <img src="./image/edit.png" alt="Editar">
+                </button>
+                <button id="btnStop">
+                    <img src="./image/cancel.png" alt="Parar">
+                </button>
+                <button id="btnRunCronometro">
+                    <img src="./image/start.png" alt="Iniciar">
+                </button>
             </div>
         </section>
     </main>

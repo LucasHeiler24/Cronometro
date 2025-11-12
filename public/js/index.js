@@ -22,9 +22,9 @@ window.onload = function () {
     });
 
     btnReset.addEventListener('click', () => {
-        inputHoras.value = "0";
-        inputMinutes.value = "0";
-        inputSecounds.value = "0";
+        inputHoras.value = "00";
+        inputMinutes.value = "00";
+        inputSecounds.value = "00";
     });
 
     btnRunCronometro.addEventListener('click', () => {
@@ -40,7 +40,7 @@ window.onload = function () {
         let minutes = parseInt(inputMinutes.value);
         let secounds = parseInt(inputSecounds.value);
 
-        let vetColors = ['green', 'yellow'];
+        let vetColors = ['rgb(3, 71, 12)', 'rgb(168, 27, 8)'];
 
         intervalCronometro = setInterval(() => {
             if (secounds <= 10 && minutes == 0 && hours == 0) {
@@ -49,7 +49,7 @@ window.onload = function () {
 
                 if (secounds == 0) {
                     clearInterval(intervalCronometro);
-                    document.querySelector('body').style.background = '#fff';
+                    document.querySelector('body').style.background = 'rgb(38, 2, 49)';
                     btnStop.setAttribute('disabled', 'disabled');
                     btnEdit.removeAttribute('disabled');
                     btnReset.removeAttribute('disabled');
